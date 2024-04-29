@@ -1,0 +1,387 @@
+body {
+    margin:0;
+	padding:0;
+	border:0;
+    background-color: #333333;      
+    size: 100%;
+    width:100%;
+    font-size:90%;
+}
+
+h1 {
+    color: #FFFFFF;
+    margin:.8em 0 .2em 0;
+	padding:0;
+}
+
+h2 {
+    
+    color: #FFFFFF;
+    margin:.8em 0 .2em 0;
+	padding:0;
+}
+
+h3 {
+    
+    color: #FFFF00;
+    margin:.8em 0 .2em 0;
+	padding:0;
+}
+
+
+ul, li {
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration:none;
+}
+
+p {
+    color: #FFFFFF;
+    margin:.4em 0 .8em 0;
+	padding:0;
+    font-size:16px;
+}
+
+/* Start main table */
+
+table.main {
+    width: 100%;
+    height: 100vh;
+    color: #FFFFFF;
+    border-spacing: 0px;
+    table-layout: fixed;
+    padding: 5px;
+}
+
+.main tr:nth-child(even) {
+    background-color: #677589;
+}
+
+.main tr:hover {
+    background-color: #8E98A5;
+}
+
+.main column {
+    width: 200px;
+}
+
+
+/* Start Global Table */
+
+td {
+    border-bottom: none;
+    padding: none;
+    text-align: center;
+}
+
+th {
+    background-color: #1F324B;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+
+
+.column {
+    float: left;
+    width: 50%;
+    text-align: center;
+    color:#FFFFFF;
+}
+.swapColumn {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    color:#FFFFFF;
+}
+.startSwapColumn {
+    float: left;
+    width: 20%;
+    text-align: center;
+    color:#FFFFFF;
+}
+.startSwapColumnReduced {
+    float: left;
+    width: 15%;
+    text-align: center;
+}
+.tagContractColumn {
+    float: left;
+    width: 20%;
+    text-align: center;
+    color:#FFFFFF;
+}
+.infoContractColumn {
+    float: right;
+    width: 80%;
+    text-align: left;
+    color:#FFFFFF;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Start Buttons */
+
+button#seed {
+    color: #000000;
+    border-radius: 50px;
+    position: relative;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
+button#wordsButton {
+    color: #000000;
+    border-radius: 50px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration:none;
+    bottom: 20px;
+    right: 20px; 
+}
+
+button#backButton {
+    color: #000000;
+    border-radius: 50px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration:none;
+    bottom: 20px;
+    left: 20px; 
+}
+
+/* Start Images */
+
+img {
+	margin:10px 10 15px;
+
+}
+
+/* 3 Column CSS Below from  http://matthewjamestaylor.com/ */
+/* column container */
+
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;
+    height: 100vh;/* This chops off any overhanging divs */
+}
+
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+    height: 100vh;
+}
+
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+    height: 100vh;
+	/* no left and right padding on columns, we just make them narrower instead 
+					only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+}
+/* 3 Column settings */
+.threecol {
+	background:#34445B;		/* right column background colour */
+}
+.threecol .colmid {
+	right:25%;			/* width of the right column */
+	background:#4A5B72;		/* center column background colour */
+}
+.threecol .colleft {
+	right:60%;			/* width of the middle column */
+	background:#34445B;	/* left column background colour */
+}
+.threecol .col1 {
+	width:60.75%;			/* width of center column content (column width minus padding on either side) */
+	left:99.7%;/* 100% plus left padding of center column */
+}
+.threecol .col2 {
+	width:10%;			/* Width of left column content (column width minus padding on either side) */
+	left:27%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threecol .col3 {
+	width:22%;			/* Width of right column content (column width minus padding on either side) */
+	left:91%;
+    /* Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+
+
+/* Start Footer Below */
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+	border-top:1px solid #000;
+}
+#footer p {
+	padding:10px;
+	margin:0;
+}
+
+/* Dropdown Menu */
+
+.dropdownBackgroundColor {
+    background-color: gold;
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #555588;
+    color: white;
+    padding: 3px;
+    font-size: 12px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #999990;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 6px 6px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  /* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    
+
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.3s;
+    font-size: 22px;
+    width: 400px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+    border: 2px;
+    
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /*border: 1px solid #ccc;*/
+    border-top: none;
+  }
+  .swapButton
+{
+  width: 220px;
+  text-align: center;
+  margin:0 auto;
+  align-items: center;
+  /*display: flex; */
+  justify-content: center; 
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* this will calculate what 50% of the element width is and will move it across the X-axis. The negative value ensures it moves to the left. */
+
+
+
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+	background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+	background-color:#7892c2;
+	border-radius:10px;
+	border:1px solid #4e6096;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	padding:5px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #283966;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+#auditRedeemTx {
+    color:#FFFFFF;
+}

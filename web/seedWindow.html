@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Smart Wallet v0.1.0 - Connection Blockchain and A.I.</title>
+        
+        <link rel="stylesheet" type="text/css" href="css/seed.css">
+        
+        <script type="text/javascript" src="/eel.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+    </head>
+
+    <body onload="getWords()">
+        <div class="colmask threecol">
+            <div class="colmid">
+                <div class="colleft">
+                    <div class="col1">
+                        <!-- Column 1 start -->
+                    <h1><center>Mnemonic Phrase</center></h1>
+        <p><center><h3>
+            Write these down,they will never be shown again!
+            </h3>
+            <br>
+        <br>
+        <table class="seed">
+        <tr>
+     
+            <tr>
+                <td><div id='word1_box'></div></td>
+                <td><div id='word2_box'></div></td>
+                <td><div id='word3_box'></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>  
+            <tr>
+                <td><div id='word4_box'></div></td>
+                <td><div id='word5_box'></div></td>
+                <td><div id='word6_box'></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> 
+            <tr>
+                <td><div id='word7_box'></div></td>
+                <td><div id='word8_box'></div></td>
+                <td><div id='word9_box'></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr> 
+            <tr>
+                <td><div id='word10_box'></div></td>
+                <td><div id='word11_box'></div></td>
+                <td><div id='word12_box'></div></td>
+            </tr>
+            </table><br>
+        <br>
+        <b>
+            <font color="red">*</font><font color="white">Without these words, you </font><font color="#FFFF00"><u>CANNOT</u></font><font color="white"> recover your funds!</font><font color="red">*</font>
+            </b>
+            <br>
+            <br>
+                    <ul>
+                    <li><span><br>
+                        <a href="loginWindow.html"><button id="backButton">Back</button></a></span></li><br> 
+                    <li><span><button id="wordsButton" onclick="getWords()">New Words</button></span></li><br><br>
+                    <li><span><input id="newpassword" type="password" placeholder="Enter A Password" autofocus /></span></li><br>
+                    <form action="mainWindow.html">
+                        <li><span><button id="seed" type="submit" onclick="setPassword();" href="mainWindow.html">Open Wallet</button><br></span></li>
+                    </form>
+                </ul>
+            </center></p><br>
+            </div>
+			<div class="col2">
+				<!-- Column 2 start -->
+                <!-- Column 2 end -->
+			</div>
+			<div class="col3">
+				<!-- Column 3 start -->
+            </div>
+                <!-- Column 3 end -->
+            </div>
+            </div>
+        </div>
+
+    </body>
+</html>

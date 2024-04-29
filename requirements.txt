@@ -1,0 +1,26 @@
+pip install py_hd_wallet
+pip install eel
+pip install qrcode
+pip install clove
+pip install web3
+pip install python-dotenv
+pip install bit
+pip install plotly
+pip install scikit-garden
+pip install scrypt
+pip install cryptos
+pip install multicrypto
+
+
+(Anaconda Users: conda install -c conda-forge scrypt)
+
+## Installation hd_wallet_derive ##
+
+ git clone https://github.com/dan-da/hd-wallet-derive
+ cd hd-wallet-derive
+ php -r "readfile('https://getcomposer.org/installer');" | php
+ export PATH=/usr/local/opt/php@7.3/bin:$PATH
+ echo "export PATH=/usr/local/opt/php@7.3/bin:$PATH" >> ~/.bash_profile
+ php composer.phar install
+
+###################################

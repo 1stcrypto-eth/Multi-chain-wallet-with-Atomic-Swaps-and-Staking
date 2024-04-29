@@ -1,0 +1,79 @@
+<cryptocurrencies>
+    <BTC>
+        <title>Bitcoin</title>
+        <description lang="en"> Bitcoin is a digital currency created in January 2009. 
+        created by the mysterious
+        developer Satoshi Nakamoto, whose true identity has yet to be verified. Bitcoin 
+        offers the promise of lower transaction fees than traditional payment mechanisms 
+        and is decentralized, unlike government-issued currencies.</description>
+    </BTC>
+
+    <BTG>
+        <title>Bitcoin Gold</title>
+        <description lang="en"> Bitcoin gold was a hard fork of the original open source 
+        cryptocurrency which took place on October 24, 2017. While hard forks take place 
+        for a number of reasons,bitcoin gold's stated purpose has been to "make bitcoin 
+        decentralized again."
+        </description>
+    </BTG>
+
+    <BCH>
+        <title>Bitcoin Cash</title>
+        <description lang="en"> Bitcoin cash is a cryptocurrency created in August 2017, from 
+        a fork of Bitcoin. Bitcoin Cash increases the size of blocks, allowing more 
+        transactions to be processed. is referred to as Bitcoin Cash because it uses the 
+        original Bitcoin Cash client. 
+        </description>
+    </BCH>
+
+    <LTC>
+        <title>Litecoin</title>
+        <description lang="en">Launched in the year 2011, Litecoin is an alternative 
+        cryptocurrency based on the model of Bitcoin. Litecoin was created by an MIT graduate 
+        and former Google engineer named Charlie Lee.Litecoin differs from 
+        Bitcoins in aspects like faster block generation rate and use of scrypt as a proof of 
+        work scheme. </description>
+    </LTC>
+
+    <DASH>
+        <title>Dash</title>
+        <description lang="en">Dash (formerly Darkcoin) is a blockchain-based peer-to-peer 
+        cryptocurrency that was forked out of Bitcoin to offer faster and more private transactions 
+        to users than Bitcoin could deliver. Dash is a blendword for Digital Cash and its currency 
+        symbol in the markets is DASH.</description>
+    </DASH>
+
+    <DOGE>
+        <title>Doge</title>
+        <description lang="en">Dogecoin is a peer-to-peer open source cryptocurrency and falls under
+         the category of altcoins. Launched in December 2013 with a Shibu Inus (Japanese dog) as its
+          logo, Dogecoin looked casual in its approach but is gaining wide acceptance for online 
+          transactions. Dogecoin is scrypt based (i.e. based on a password key) and 
+          enables fast payments to anyone, anywhere across the globe.</description>
+    </DOGE>
+
+    <XRP>
+        <title>Ripple</title>
+        <description lang="en">Ripple is a technology that acts as both a cryptocurrency and a digital 
+        payment network for financial transactions. It was first released in 2012 and was co-founded by 
+        Chris Larsen and Jed McCaleb.</description>
+    </XRP>
+
+    <XLM>
+        <title>Stellar Lumens</title>
+        <description lang="en">The Stellar network is a blockchain-based distributed ledger network 
+        that connects banks, payments systems and people to facilitate low-cost, cross-asset transfers 
+        of value, including payments. Stellar has its native cryptocurrency called lumens, which is 
+        denoted by the symbol XLM. All three terms—Stellar, lumens and XLM—are used interchangeably, 
+        though stellar is blockchain network, lumen is the cryptocurrency and XLM is its trading symbol.
+        </description>
+    </XLM>
+
+    <ZEC>
+        <title>ZCash</title>
+        <description lang="en">ZCash is a cryptocurrency with a decentralized blockchain that provides 
+        anonymity for its users and their transactions. As a digital currency, ZCash is similar to 
+        Bitcoin in a lot of ways including the open-source feature, but their major differences lie in 
+        the level of privacy and fungibility that each provides.</description>
+    </ZEC>
+</cryptocurrencies>

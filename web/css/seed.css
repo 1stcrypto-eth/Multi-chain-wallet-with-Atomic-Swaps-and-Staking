@@ -1,0 +1,292 @@
+body {
+    margin:0;
+	padding:0;
+	border:0;
+    background-color: #333333;      
+    size: 100%;
+    width:100%;
+    font-size:90%;
+}
+
+h1 {
+    color: #FFFFFF;
+    margin:.8em 0 .2em 0;
+	padding:0;
+    font-size: 32px;
+    
+}
+
+h2 {
+    
+    color: #FFFFFF;
+    margin:.8em 0 .2em 0;
+	padding:0;
+    font-style: italic;
+    
+}
+
+h3 {
+    
+    color: #FFFF00;
+    margin:.8em 0 .2em 0;
+	padding:0;
+}
+
+ul, li {
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration:none;
+}
+
+p {
+    color: #FFFFFF;
+    margin:.4em 0 .8em 0;
+	padding:0;
+}
+
+input[type=text] {
+    background: transparent;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 2px 5px;
+    color: #FFFFFF;
+    
+}
+
+input[type=password] {
+    background: transparent;
+    border-bottom: 1px solid #FFFFFF;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    padding: 2px 5px;
+    color: #FFFFFF;
+    
+}
+
+::placeholder { 
+    color:#FFFFFF;
+    padding: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.seed:focus{
+    background: transparent;
+    border: none;
+}
+
+/* Start main table */
+
+table.main {
+    width: 100%;
+    height: 95%;
+    color: #FFFFFF;
+    border: 1px solid black;
+    table-layout: fixed;
+    padding: 5px;
+}
+
+.main tr:nth-child(even) {
+    background-color: #677589;
+}
+
+.main tr:hover {
+    background-color: #8E98A5;
+}
+
+.main column {
+    width: 200px;
+}
+
+/* Start Seed Table */
+
+table.seed {
+    width: 100%;
+    height: 100%;
+    position: center;
+    color: #FFFFFF;
+    border: 1px;
+    border-radius:25px;
+    table-layout: fixed;
+    
+}
+
+.seed td {
+    font-size: 24px;
+    text-align: center;
+    padding:10px;
+}
+
+
+.seed tr:nth-child(even) {
+    background-color: #677589;
+}
+
+
+/* Start Global Table */
+
+td {
+    border-bottom: none;
+    padding: 0px;
+    text-align: center;
+}
+
+th {
+    background-color: #1F324B;
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+    text-align: center;
+}
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Start Buttons */
+
+button#seed {
+    color: #000000;
+    border-radius: 50px;
+    position: relative;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
+button#wordsButton {
+    color: #000000;
+    border-radius: 50px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration:none;
+    bottom: 20px;
+    right: 20px; 
+}
+
+button#backButton {
+    color: #000000;
+    border-radius: 50px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration:none;
+    bottom: 20px;
+    left: 20px; 
+}
+
+/* Start Images */
+
+img {
+	margin:10px 10 10px;
+
+}
+
+/* 3 Column CSS Below from  http://matthewjamestaylor.com/ */
+/* column container */
+
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;
+    height: 100vh;/* This chops off any overhanging divs */
+}
+
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+    height: 100vh;
+    
+}
+
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+    height: 100vh;
+	/* no left and right padding on columns, we just make them narrower instead 
+					only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+}
+/* 3 Column settings */
+.threecol {
+	background:#4A5B72;		/* right column background colour */
+}
+.threecol .colmid {
+	right:25%;			/* width of the right column */
+	background:#4A5B72; /* center column background colour */
+}
+.threecol .colleft {
+	right:50%;			/* width of the middle column */
+	background:#4A5B72;	/* left column background colour */
+}
+.threecol .col1 {
+	width:50%;			/* width of center column content (column width minus padding on either side) */
+	left:100%;/* 100% plus left padding of center column */
+    padding-top:50px;
+}
+.threecol .col2 {
+	width:25%;			/* Width of left column content (column width minus padding on either side) */
+	left:25%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threecol .col3 {
+	width:25%;			/* Width of right column content (column width minus padding on either side) */
+	left:75%;
+    /* Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+
+
+/* Start Footer Below */
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+	border-top:1px solid #000;
+}
+#footer p {
+	padding:10px;
+	margin:0;
+}

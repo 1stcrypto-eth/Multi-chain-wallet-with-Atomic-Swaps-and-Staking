@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Smart Wallet v0.1.0 - Connection Blockchain and A.I.</title>
+
+        <link rel="stylesheet" type="text/css" href="css/main.css">  
+        
+        <!-- Start of Scripts -->
+        <script type="text/javascript" src="/eel.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+      
+
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        
+          
+         <script language="JavaScript">
+                          function processUser()
+                          {
+                            var parameters = location.search.substring(1);
+
+                            var pass = parameters.split("=");
+                            setPassword(pass[0])
+                          }
+                        </script>
+        <!-- End of Scripts -->
+        
+        
+        
+    </head>
+    
+    <body onload="populateWallet('BTC')">
+      
+            
+        <div class="colmask threecol">
+            <div class="colmid">
+                <div class="colleft">
+                    <div class="col1">
+                        <!-- Column 1 start -->
+        <table class="main">
+        <tr>
+            <th>Icon</th>
+            <th>Name</th>
+            <th>Ticker</th>
+            <th>Balance</th>
+            <th>Wallet Value (USD)</th>
+            <th>Price (USD)</th>
+        </tr>
+        <tr data-coin="BTC">
+            <td><img src="https://cryptoicons.org/api/icon/btc/30"></td>
+            <td>Bitcoin</td>
+            <td>BTC</td>
+            <td><div id='btc_balance'></div></td>
+            <td><div id='btc_usd_value'></div></td>
+            <td><div id='btc_usd'></div></td>
+        </tr>           
+        <tr data-coin="BTG">
+            <td><img src="https://cryptoicons.org/api/icon/btg/30"></td>
+            <td>Bitcoin Gold</td>
+            <td>BTG</td>
+            <td><div id='btg_balance'>0.00</div></td>
+            <td><div id='btg_usd_value'></div></td>  
+            <td><div id='btg_usd'></div></td>
+        </tr>
+        <tr data-coin="BCH">
+            <td><img src="https://cryptoicons.org/api/icon/bch/30"></td>
+            <td>Bitcoin Cash</td>
+            <td>BCH</td>
+            <td><div id='bch_balance'></div></td>
+            <td><div id='bch_usd_value'></div></td>  
+            <td><div id='bch_usd'></div></td>
+        </tr>
+        <tr data-coin="LTC">
+            <td><img src="https://cryptoicons.org/api/icon/ltc/30"></td>
+            <td>Litecoin</td>
+            <td>LTC</td>
+            <td><div id='ltc_balance'></div></td>
+            <td><div id='ltc_usd_value'></div></td>  
+            <td><div id='ltc_usd'></div></td>
+        </tr>
+        <tr data-coin="DASH">
+            <td><img src="https://cryptoicons.org/api/icon/dash/30"></td>
+            <td>Dash</td>
+            <td>DASH</td>
+            <td><div id='dash_balance'></div></td>
+            <td><div id='dash_usd_value'></div></td>
+            <td><div id='dash_usd'></div></td>
+        </tr>
+        <tr data-coin="DOGE">
+            <td><img src="https://cryptoicons.org/api/icon/doge/30"></td>
+            <td>Dogecoin</td>
+            <td>DOGE</td>
+            <td><div id='doge_balance'></div></td>
+            <td><div id='doge_usd_value'></div></td>  
+            <td><div id='doge_usd'></div></td>
+        </tr>
+        <tr data-coin="XRP">
+            <td><img src="https://cryptoicons.org/api/icon/xrp/30"></td>
+            <td>Ripple</td>
+            <td>XRP</td>
+            <td><div id='xrp_balance'>0.00</div></td>
+            <td><div id='xrp_usd_value'></div></td>  
+            <td><div id='xrp_usd'></div></td>
+        </tr>
+        <tr data-coin="ZEC">
+            <td><img src="https://cryptoicons.org/api/icon/zec/30"></td>
+            <td>ZCash</td>
+            <td>ZEC</td>
+            <td><div id='zec_balance'></div></td>
+            <td><div id='zec_usd_value'></div></td>
+            <td><div id='zec_usd'></div></td>
+        </tr>
+        <tr data-coin="XLM">
+            <td><img src="https://cryptoicons.org/api/icon/xlm/30"></td>
+            <td>Stellar Lumens</td>
+            <td>XLM</td>
+            <td><div id='xlm_balance'>0.00</div></td>
+            <td><div id='xlm_usd_value'></div></td>
+            <td><div id='xlm_usd'></div></td>
+        </tr>
+        </table>
+        </div>
+			<div class="col2">
+				<!-- Column 2 start -->
+                <h2><center>Smart Wallet v0.1.0</center></h2><span style="color: gold; font-size: 13px;"><hr><center>Connecting <br>Blockchain and A.I.</center></span><br>
+                <img id="logo" src="images/smart3.png" height="150vh" width="170vw"  style="float: right; margin-left: 10px; margin-bottom: 5px;"><br>
+                <br>
+                <br>
+                <ul>
+                    <li><span><img src="images/bitcoin-icon.png" height="25px" width="30px">&nbsp;<a href="#" onclick="launchMainWindow()" style="vertical-align: top;">Wallet</a></span></li><br>
+                    <li><span><img src="images/swap.png" height="25px" width="25px">&nbsp;&nbsp;<a href="#" onclick="swapWindow()" style="vertical-align: top;">Atomic Swap</a></span></li><br>
+                    <li><span><img src="images/exchange.png" height="25px" width="30px">&nbsp;<a href="#" onclick="exchangeWindow()" style="vertical-align: top;">Exchange</a></span></li><br>
+                    <li><span><img src="images/staking.png" height="25px" width="30px">&nbsp;<a href="#" onclick="stakingWindow()" style="vertical-align: top;">Staking</a></span></li><br>
+                    <li><span><img src="images/ML.png" height="25px" width="30px">&nbsp;<a href="#" onclick="predictionsWindow()" style="vertical-align: top;">Predictions </a></span></li>
+
+                </ul><br><br><br><br><br>
+                <br><br><br><br>
+                <!-- <img src="images/exit.png" height="25px" width="30px">&nbsp;&nbsp;<a href="#" onclick="windowClose()" style="vertical-align: top;">Close Wallet</a> -->
+                <!-- Column 2 end -->
+			</div>
+			<div class="col3"><br>
+				<!-- Column 3 start -->
+                <h2><center><span><div id='title'>Bitcoin</div></span></center></h2>
+               
+                    <span><div id='description' style="color: white;">
+                    ...loading description...<br><br>
+
+                </div></span>
+                <center><img id="QR" src="images/loading.png" alt="Wallet Address" height="170" width="170"><br>
+                    
+                   
+                    
+                        <ul>
+                            <span><u>Wallet Address:</u></span><br>
+
+                            <li><span><div id='address'>Requesting New Address From The Blockchain</div></span></li><br><br>
+                            
+                            <li><span>Current Balance : </span>
+                            <div id="btc_balance2"><span id="balance" style="color: gold; font-size: 18px;">
+                                ...Getting your balance..
+                                </span></div></li>
+                            
+                            <li><span>USD Value : </span>
+                            <div id="btc_usd_value"><span id="USDbalance" style="color: green; font-size: 18px;">
+                                $00.00
+                                </span></div></li><br>
+                            <br>
+
+                            <center><p><hr><h3> Send Coins </h3>
+                                <form>
+                                    Recipient Address:<br>
+                                    <input id="sendTo" type="text" name="reciepient"><br><br>
+                                    Amount:<br>
+                                    <input id="amount" type="text" name="amount">
+                                </form>
+                            </center>
+                                <br>
+                            <button id="send_tx" type="submit" onclick="sendTx();">Send</button>
+
+                <!-- Column 3 end -->      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        
+                var vars = {};
+                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                    vars[key] = value;
+                });
+                console.log("from mainWindow: index = "+vars["index"])
+                setSeedIndex(vars["index"]);
+                
+            </script>
+
+        <script>
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const rows = document.querySelectorAll("tr[data-coin]");
+                console.log(rows)
+                rows.forEach(row => {
+
+                    row.addEventListener("click", () => {
+                        let qr_img = document.getElementById('QR');
+                        let address = document.getElementById('address');
+                        myFunction(this);
+                        address.innerHTML = "Loading New Address"
+                        qr_img.src = "images/loading.png"
+                        populateWallet(row.dataset.coin);
+
+                    });
+                });
+
+            });
+            
+        </script>
+    </body>
+</html>

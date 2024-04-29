@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Smart Wallet v0.1.0 - Connection Blockchain and A.I.</title>
+        <link rel="stylesheet" type="text/css" href="css/predictions.css">     
+        <!-- Start of Scripts -->
+        <script type="text/javascript" src="/eel.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <script type="text/javascript" src="scripts/jquery-3.4.1.js"></script>
+        <!-- End of Scripts -->    
+    </head>
+    
+    <body>
+        <div class="colmask threecol">
+            <div class="colmid">
+                <div class="colleft">
+                    <div id="mid" class="col1">
+                        <!-- Column 1 start -->
+                            <div id="graph"></div>
+                    </div>
+                    <div class="col2">
+                    <!-- Column 2 start -->
+                    <h2><center>Smart Wallet v0.1.0</center></h2><span style="color: gold; font-size: 13px;"><hr><center>Connecting <br>Blockchain and A.I.</center></span><br>
+                    <img id="logo" src="images/smart3.png" height="150vh" width="170vw"  style="float: right; margin-left: 10px; margin-bottom: 5px;"><br>
+                    <br>
+                    <br>
+                    <ul>
+                            <li><span><img src="images/bitcoin-icon.png" height="25px" width="30px">&nbsp;<a href="#" onclick="launchMainWindow()" style="vertical-align: top;">Wallet</a></span></li><br>
+                            <li><span><img src="images/swap.png" height="25px" width="25px">&nbsp;&nbsp;<a href="#" onclick="swapWindow()" style="vertical-align: top;">Atomic Swap</a></span></li><br>
+                            <li><span><img src="images/exchange.png" height="25px" width="30px">&nbsp;<a href="#" onclick="exchangeWindow()" style="vertical-align: top;">Exchange</a></span></li><br>
+                            <li><span><img src="images/staking.png" height="25px" width="30px">&nbsp;<a href="#" onclick="stakingWindow()" style="vertical-align: top;">Staking</a></span></li><br>
+                            <li><span><img src="images/ML.png" height="25px" width="30px">&nbsp;<a href="#" onclick="predictionsWindow()" style="vertical-align: top;">Predictions </a></span></li>
+                        
+                        </ul><br><br><br><br><br><br>
+                        <!--<img src="images/back.png" height="25px" width="30px">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onclick="history.back()" style="vertical-align: top;">Back</a>
+                        <br><br>
+                        <img src="images/exit.png" height="25px" width="30px">&nbsp;&nbsp;<a href="#" onclick="windowClose()" style="vertical-align: top;">Close Wallet</a> -->
+                    <!-- Column 2 end -->
+                    </div>
+                    <div class="col3">
+                    <!-- Column 3 start -->
+                    <h2>Machine Learning Predictions</h2><br><span style="color: gold; font-size: 15px;"><center>These Projections Are For Informational Purposes Only</center></span><br><br><br><p>YOU ARE RESPONSIBLE FOR ALL THE RISKS AND FINANCIAL RESOURCES YOU USE AND FOR THE CHOSEN TRADING SYSTEM<br><br><br><be><hr>
+                    <br>
+                    <br>
+                    <select id ="Coin" name="Cryptocurrency" class = "dropdownBackgroundColor" style= "width: 250px">
+                        <option value = "BTCRFEnsemble">Bitcoin Random Forest Ensemble</option>
+                        <option value = "ETHRFEnsemble">Ether Random Forest Ensemble</option>
+                        <option value = "LTCRFEnsemble">Litecoin Random Forest Ensemble</option>
+                        <option value = "BTCArima">Bitcoin ARIMA Forecast</option>
+                        <option value = "ETHArima">Ether ARIMA Forecast</option>
+                        <option value = "LTCArima">Litecoin ARIMA Forecast</option>
+                    </select>
+                        <br>
+                        <br>
+                        <br>
+                        <hr>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p>Today's Current Price: <div id="todays_price" style="color: yellow"; font-size: 18px; ></div>
+                        <p>Tomorrows's Prediction: <div id="tomorrows_prediction" style="color: yellow"; font-size: 18px;></div>
+                        <p>Upper Limit of 95% Confidence Interval: <div id="upper_limit" style="color: yellow"; font-size: 18px;></div>
+                        <p>Lower Limit of 95% Confidence Interval: <div id="lower_limit" style="color: yellow"; font-size: 18px;></div>
+                    <!-- Column 3 end -->      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        
+                var vars = {};
+                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                    vars[key] = value;
+                });
+                console.log("from mainWindow: index = "+vars["index"])
+                setSeedIndex(vars["index"]);
+                
+            </script>
+
+
+    </body>
+    <script>
+        $( "#Coin" )
+          .change(function () {
+            var mlPlot = "";
+            var mltable = "";
+            $( "#Coin option:selected" ).each(function() {
+              mlPlot += $( this ).val() + ".html";
+              mltable += $( this ).val() + ".json"; 
+            });
+            $("#graph").load(mlPlot);
+            get_ml_price_dict(mltable);
+            
+          })
+          .change();
+    </script>
+    

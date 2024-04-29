@@ -1,0 +1,43 @@
+atomic swap procedure:
+
+1. Both parties create wallets on both currencies. Total of wallets: 4. 
+   Since it will be done in our wallet, this step can be skiped.
+
+2. Both parties exchange addresses.
+
+3. Party A initializes the atomic transaction by sending X amount of cryptocurrency A'
+
+4. A sends to B the contract # and transaction address of the past transaction.
+
+5. Party B creates a contract "R" in A' blockchain that audits the transaction that A just  
+   made. This contract needs the contract # and transaction address of the past transaction.
+   Here, B can make sure that the transaction matches the agreement.
+
+6. B now sends Y amount of B' cryptocurrency that equals the value X of A' that A sent.
+
+7. B sends to A the contract # and transaction address of the past transaction.
+
+8. A creates a contract "S" in B' blockchain that audits the transaction that B just  
+   made. This contract needs the contract # and transaction address of the past transaction.
+   Here, A can make sure that the transaction matches the agreement.
+
+9. A now redeems the B' coins through the contract "S".
+
+10. Party B needs to wait until party A redeems the B's he sent to extract the secret from the
+    transaction made by B in point 6.
+    
+11. B now redeems the A' coins through the contract "R".
+
+
+User experience:
+
+1. Addresses exchange.
+
+2. A initializes and sends contract # and tx address.
+
+3. B "participates" and sends contract # and tx address.
+
+3. A redeems first with the secret of his transaction.
+
+4. Then B redeems with the secret produced by the first redeem.
+

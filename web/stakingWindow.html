@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Smart Wallet v0.1.0 - Connection Blockchain and A.I.</title>
+
+        <link rel="stylesheet" type="text/css" href="css/staking.css">  
+        
+        <!-- Start of Scripts -->
+        <script type="text/javascript" src="/eel.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <!-- End of Scripts -->  
+        
+    </head>
+    
+    <body>
+        <div class="colmask threecol">
+            <div class="colmid">
+                <div class="colleft">
+                    <div class="col1">
+                        <!-- Column 1 start -->
+                        <center><h1>Cryptocurrency Staking</h1>
+                            <p>Earn Over 6% Annually with Staking! </p>
+                        <img class="construction" src="images/construction.png" height="400" width="500"></center>
+
+        </div>
+			<div class="col2">
+				<!-- Column 2 start -->
+                <h2><center>Smart Wallet v0.1.0</center></h2><span style="color: gold; font-size: 13px;"><hr><center>Connecting <br>Blockchain and A.I.</center></span><br>
+                <img id="logo" src="images/smart3.png" height="150vh" width="170vw"  style="float: right; margin-left: 10px; margin-bottom: 5px;"><br>
+                <br>
+                <br>
+                <ul>
+                        <li><span><img src="images/bitcoin-icon.png" height="25px" width="30px">&nbsp;<a href="#" onclick="launchMainWindow()" style="vertical-align: top;">Wallet</a></span></li><br>
+                        <li><span><img src="images/swap.png" height="25px" width="25px">&nbsp;&nbsp;<a href="#" onclick="swapWindow()" style="vertical-align: top;">Atomic Swap</a></span></li><br>
+                        <li><span><img src="images/exchange.png" height="25px" width="30px">&nbsp;<a href="#" onclick="exchangeWindow()" style="vertical-align: top;">Exchange</a></span></li><br>
+                        <li><span><img src="images/staking.png" height="25px" width="30px">&nbsp;<a href="#" onclick="stakingWindow()" style="vertical-align: top;">Staking</a></span></li><br>
+                        <li><span><img src="images/ML.png" height="25px" width="30px">&nbsp;<a href="#" onclick="predictionsWindow()" style="vertical-align: top;">Predictions </a></span></li>
+                </ul><br><br><br><br><br><br>
+                <!--<img src="images/back.png" height="25px" width="30px">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" onclick="history.back()" style="vertical-align: top;" />Back<br><br>
+                <img src="images/exit.png" height="25px" width="30px">&nbsp;&nbsp;<a href="" onclick="windowClose()" style="vertical-align: top;">Close Wallet</a> -->
+                <!-- Column 2 end -->
+			</div>
+			<div class="col3"><br>
+				<!-- Column 3 start -->
+                <h2><center>What Is Staking?</h2>
+                <p><br>
+                &nbsp;&nbsp;Staking is the purchase of cryptocoins and keeping (holding) them in a cryptocurrency wallet for a particular period of time. This is similar to a fixed deposit in the fiat currency world which rewards you with a fixed interest rate at the end of the stipulated time in the contract.<br><br>
+
+                &nbsp;&nbsp;This brings us to the concept of Proof of Staking (PoS). It is an agreement algorithm for some cryptocurrencies which creates new blocks that you can add to the blockchain. These created blocks are actually staked by somebody who is holding some cryptocoins already and helps to validate a new deal on the platform.<br><br>
+
+                &nbsp;&nbsp;You are able to mine or validate new deals for cryptocoins that are equal to the number of cryptocoins you have really staked. The more cryptocoins you stake, the higher your power to validate transactions. Likewise, the longer you hold your cryptocoins in your wallet, the higher the number of your coins.<br><br>
+
+                &nbsp;&nbsp;In fact, only a handful of individuals understand staking and its benefits when compared to the majority who knows about mining and the equipment related to it.<br><br>
+                    <br><br>
+                <u>To learn more goto <a href="https://cryptoblockwire.com/what-is-cryptocurrency-staking/">cryptoblockwire.com</a></u></p></center>
+                
+                <!-- Column 3 end -->      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        
+                var vars = {};
+                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+                    vars[key] = value;
+                });
+                console.log("from mainWindow: index = "+vars["index"])
+                setSeedIndex(vars["index"]);
+                
+            </script>
+
+    </body>
+</html>

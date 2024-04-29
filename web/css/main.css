@@ -1,0 +1,230 @@
+body {
+    margin:0;
+	padding:0;
+	border:0;
+    background-color: #333333;
+    size: 100%;
+    width:100%;
+    font-size:90%;
+}
+
+h1 {
+    color: #FFFFFF;
+    margin:.8em 0 .2em 0;
+	padding:0;
+}
+
+h2 {
+
+    color: #FFFFFF;
+    margin:.8em 0 .2em 0;
+	padding:0;
+}
+
+h3 {
+
+    color: #FFFF00;
+    margin:.8em 0 .2em 0;
+	padding:0;
+}
+
+ul, li {
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration:none;
+}
+
+p {
+    color: #FFFFFF;
+    margin:.4em 0 .8em 0;
+	padding:0;
+}
+
+/* Start main table */
+
+table.main {
+    width: 100%;
+    height: 100vh;
+    color: #FFFFFF;
+    border-spacing: 0px;
+    table-layout: fixed;
+    padding: 5px;
+}
+
+.main tr:nth-child(even) {
+    background-color: #677589;
+}
+
+.main tr:hover {
+    background-color: #8E98A5;
+}
+
+.main column {
+    width: 200px;
+}
+
+
+/* Start Global Table */
+
+td {
+    border-bottom: none;
+    padding: none;
+    text-align: center;
+}
+
+th {
+    background-color: #1F324B;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Start Buttons */
+
+button#seed {
+    color: #000000;
+    border-radius: 50px;
+    position: relative;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration:none;
+}
+
+button#wordsButton {
+    color: #000000;
+    border-radius: 50px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration:none;
+    bottom: 20px;
+    right: 20px;
+}
+
+button#backButton {
+    color: #000000;
+    border-radius: 50px;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration:none;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* Start Images */
+
+img {
+	margin:10px 10 15px;
+
+}
+
+/* 3 Column CSS Below from  http://matthewjamestaylor.com/ */
+/* column container */
+
+.colmask {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;
+    height: 100vh;/* This chops off any overhanging divs */
+}
+
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+    height: 100vh;
+}
+
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+    height: 100vh;
+	/* no left and right padding on columns, we just make them narrower instead
+					only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+}
+/* 3 Column settings */
+.threecol {
+	background:#34445B;		/* right column background colour */
+}
+.threecol .colmid {
+	right:25%;			/* width of the right column */
+	background:#4A5B72;		/* center column background colour */
+}
+.threecol .colleft {
+	right:60%;			/* width of the middle column */
+	background:#34445B;	/* left column background colour */
+}
+.threecol .col1 {
+	width:60.75%;			/* width of center column content (column width minus padding on either side) */
+	left:99.7%;/* 100% plus left padding of center column */
+}
+.threecol .col2 {
+	width:10%;			/* Width of left column content (column width minus padding on either side) */
+	left:27%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.threecol .col3 {
+	width:22%;			/* Width of right column content (column width minus padding on either side) */
+	left:91%;
+    /* Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+
+
+/* Start Footer Below */
+#footer {
+	clear:both;
+	float:left;
+	width:100%;
+	border-top:1px solid #000;
+}
+#footer p {
+	padding:10px;
+	margin:0;
+}
+
+/* Dropdown Menu */
+
+.dropdownBackgroundColor {
+    background-color: gold;
+
+}

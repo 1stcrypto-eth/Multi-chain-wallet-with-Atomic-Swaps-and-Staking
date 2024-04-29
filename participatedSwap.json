@@ -1,0 +1,20 @@
+{
+    "contract": "63a6141eebc0b42efb279021593598eb6ead8ef618326c8876a9143123da719884fdf617db8450d6a7f9b638cb0e1f6704a2ce345eb17576a91460b6f15ce22c5ed94329e29828f8d38c149111466888ac",
+    "contract_address": "3J64NUXgfkM8oyzaUDfRaaq3Hg9aKcrYZx",
+    "contract_transaction": "010000000120069a7d50b230c99657e5847858bca0965b4768d76e2755d0960d6f4889ed2f010000006a47304402205ed9648449c5a2dbf7fde38c15c98c4a3a31d5326f43c097b108e578222b3571022009cd6a24f0976443289eb25e2941f8e8b3f7d6d9222ba8302e1e7cb09cdfa0f80121031ed7c1c42ec3096db3a181afd8070488150bf2283427c4a5b9cc69eccd2a4d770000000002533d00000000000017a914b3dd9f555e92f88868008d6eb03f1bbf9895604b87c4080000000000001976a91460b6f15ce22c5ed94329e29828f8d38c1491114688ac00000000",
+    "fee": 3.455e-05,
+    "fee_per_kb": 0.00015494,
+    "fee_per_kb_text": "0.00015494 BTC / 1 kB",
+    "fee_text": "0.00003455 BTC",
+    "locktime": "2020-02-01 01:04:34.630763",
+    "recipient_address": "15Uq4Xm88GKvwp67emVGdCw4FDmFrzCDDq",
+    "refund_address": "19pP2WLz1CMeVhQY9T4PHowKzKKks79iuQ",
+    "secret": "",
+    "secret_hash": "1eebc0b42efb279021593598eb6ead8ef618326c",
+    "size": 223,
+    "size_text": "223 bytes",
+    "transaction_address": "30be5c5ec67e8b1c77ec0c890b1c4145032a5c3d3058b1508f698b9204263152",
+    "transaction_link": "https://insight.bitpay.com/tx/30be5c5ec67e8b1c77ec0c890b1c4145032a5c3d3058b1508f698b9204263152",
+    "value": 0.0001569861102302277,
+    "value_text": "0.00015699 BTC"
+}
